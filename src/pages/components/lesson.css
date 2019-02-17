@@ -1,0 +1,27 @@
+.Lesson{
+  margin-bottom: 3em;
+  background: white;
+  transition: 1s
+}
+.Lesson:hover{
+  box-shadow: 5px 5px rgba(94, 194, 252, 0.3);
+}
+.LessonTitle{
+  border: solid 1px rgb(245, 244, 244);
+  transition: 1s
+}
+
+.LessonTitle:hover{
+  box-shadow: 0 0 10px 0 rgba(94, 194, 252, 0.4)
+}
+
+.LessonTitle h2{
+  padding-left: 2em;
+}
+
+.visible{
+  display: block;
+}
+.no-visible{
+  display: none;
+}

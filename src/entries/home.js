@@ -1,6 +1,8 @@
 import React from 'react'
 import {render} from 'react-dom'
+import Home from '../pages/containers/home'
+import data from '../../api.json'
 
 const app = document.getElementById('app')
 
-render(<h1>hola con repo</h1>, app)
+render(<Home data={data}/>, app)

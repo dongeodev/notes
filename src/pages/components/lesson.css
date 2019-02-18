@@ -7,8 +7,15 @@
   box-shadow: 5px 5px rgba(94, 194, 252, 0.3);
 }
 .LessonTitle{
-  border: solid 1px rgb(245, 244, 244);
-  transition: 1s
+  border-left: solid 2px rgba(87, 186, 252, 0.3);
+  border-bottom: solid 2px rgba(87, 186, 252, 0.3);
+  color:rgb(63, 67, 71);
+  transition: 1s;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
 .LessonTitle:hover{
@@ -17,11 +24,19 @@
 
 .LessonTitle h2{
   padding-left: 2em;
+  padding-top: 0.8em;
+  margin: 0;
+
 }
 
 .visible{
   display: block;
+  padding-bottom: 1em;
+  padding-left: 4em;
+  padding-top: 0.8em;
+  padding-right: 4em;
 }
 .no-visible{
   display: none;
 }
+

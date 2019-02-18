@@ -4,5 +4,5 @@ body{
   
 }
 .HomeLayout{
-  display: flex;
+  display: block;
 }

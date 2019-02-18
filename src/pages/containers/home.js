@@ -3,6 +3,9 @@ import HomeLayout from "../components/home-layout";
 import RelatedLayout from '../components/related-layout'
 import Related from '../components/related'
 import LessonWrapper from '../components/lesson-wrapper'
+import Header from '../components/header'
+import Container from '../components/container'
+
 
 class Home extends Component{
  
@@ -10,6 +13,10 @@ class Home extends Component{
   render(){
     return(
       <HomeLayout>
+        
+        <Header courses={this.props.data.cursos}/>
+        <Container>
+
         <RelatedLayout>
           <Related cursos={this.props.data.cursos}/>
         </RelatedLayout>
@@ -17,8 +24,9 @@ class Home extends Component{
           lesson={this.props.data.cursos[0].lesson}
           handleClick={this.handleClick}
           
-        />
+          />
 
+        </Container>
       </HomeLayout>
     )
   }

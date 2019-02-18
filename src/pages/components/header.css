@@ -1,0 +1,22 @@
+.Header{
+  display: flex;
+  width: 100vW;
+  height: 3em;
+  align-items: center;
+}
+h1{
+  width: 5em;
+}
+
+.menuContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  margin-left:3em; 
+  width: 100%;
+}

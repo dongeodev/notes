@@ -5,6 +5,7 @@ import Related from '../components/related'
 import LessonWrapper from '../components/lesson-wrapper'
 import Header from '../components/header'
 import Container from '../components/container'
+import Footer from './footer';
 
 
 class Home extends Component{
@@ -27,6 +28,7 @@ class Home extends Component{
           />
 
         </Container>
+        <Footer/>
       </HomeLayout>
     )
   }

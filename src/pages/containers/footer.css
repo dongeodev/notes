@@ -1,0 +1,19 @@
+.Footer{
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  background: lawngreen;
+}
+.Footer p{
+  margin: 0 3em;
+}
+.socialMedia{
+  margin-right: 1em;
+  display: flex;
+  align-items: center ;
+}
+.socialIcon{
+  margin-right: 1em;
+
+}

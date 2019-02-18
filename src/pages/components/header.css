@@ -17,6 +17,5 @@ h1{
 .menu {
   list-style: none;
   display: flex;
-  margin-left:3em; 
-  width: 100%;
 }
+

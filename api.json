@@ -72,7 +72,75 @@
       "id": 2,
       "profesor": "LeonidasEsteban",
       "title": "Animaciontes Web",
-      "clases": [
+      "lesson": [
+        {
+          "title": "$Comandos útiles de la terminal",
+          "content": [ 
+          "cd:  Moverse entre carpetas",
+          "mkdir: crear carpetas",
+          "ls: lista de archivos en una carpeta",          
+          "touch: Crear un archivo",
+          "rm [Nombre-archivo]: Borra el archivo",
+          "rm -rf [Nombre-carpeta]: Borra carpeta",
+          "clear: limpia la terminal"
+        ],
+          "type": "strg",
+          "cover": "./images/covers/responsive.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8440-comandos-utiles-de-la-terminal/",
+          "id": 1
+        },
+        {
+          "title": "Creando Repositorios",
+          "content": ["git init: nos crea un repositorio de manera local y lo hará en la carpeta donde estamos posicionados o se le puede pasar [nombre_de_la_carpeta] y creará la carpeta con ese nombre. Los repositorios se crean como carpetas oculas, para eliminarlos puedes usar el explorardor de archivos o rm-rf [nombre del repo]"],
+          "type": "strg",
+          "cover": "./images/covers/optimizar.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8441-git-init-creando-repositorios/",
+          "id": 2
+        },
+        {
+          "title": "Agregando, quitando y viendo el estatus de archivos",
+          "content": [
+            "git add file: Agraga el archivo al staging",
+            "git add -A: Agraga todos los archivos pendientes al staging",
+            "git status: Para ver en que estado se encuentran los archivos",
+            "git rm --cached: Nos devolvemos un paso",
+            "git rm -f file :Elimina el archivo por completo",
+            "git add -n file : Que no haga nada"],
+          "type": "strg",
+          "cover": "./images/covers/bitcoin.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8442-git-add-rm-status-agregando-quitando-y-viendo-el-7/",
+          "id": 3
+        },
+        {
+          "title": "git commit (Confirmando cambios)",
+          "content": [
+            "git commit -m “mensaje” : Confirma cambios. Se recomienda ser descriptivo en el mensaje",
+            "git commit -m “mensaje” -amend : agregar nuevos cambios al ultimo commit",
+            "git log : Nos muestra la historia de todos los commits que hemos realizados."],
+          "type": "strg",
+          "cover": "./images/covers/html5.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8443-git-commit-confirmando-cambios/",
+          "id": 4
+        },
+        {
+          "title": "git tag (Etiquetando confirmaciones)",
+          "content": [
+            "git tag -a -m'': Nos permite agregar etiquetas a nuestros cambios. para agregar tag a otro commit se usa el SHA1",
+            "git tag -l: Nos muestra la lista de etiquetas.",
+            "git tag -f [SHA1]: Para renombrar. Se coloca el SHA1",
+            "git tag -d : Para borar."],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8444-git-tag-etiquetando-confirmaciones/",
+          "id": 5
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "profesor": "LeonidasEsteban",
+      "title": "React.js",
+      "lesson": [
         {
           "title": "$Comandos útiles de la terminal",
           "content": [ 

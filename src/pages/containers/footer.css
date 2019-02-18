@@ -3,7 +3,8 @@
   height: 30px;
   justify-content: space-between;
   align-items: center;
-  background: lawngreen;
+  background: rgb(255, 255, 255);
+  color: rgb(8, 8, 8);
 }
 .Footer p{
   margin: 0 3em;
@@ -12,6 +13,7 @@
   margin-right: 1em;
   display: flex;
   align-items: center ;
+  color:white;
 }
 .socialIcon{
   margin-right: 1em;

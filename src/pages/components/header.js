@@ -4,6 +4,7 @@ import './header.css'
 
 
 function Header (props){
+
   return(
     <section className='Header'>
      <h1>Courses</h1>
@@ -11,7 +12,7 @@ function Header (props){
       <ul className='menu'>
         {
           props.courses.map((item)=>{
-            return <MenuCourses {...item} key={item.id}/>
+            return <MenuCourses handleCourse={props.handleCourse}{...item} key={item.id}/>
             // return console.log(item)
           })
         }

@@ -23,7 +23,7 @@ class Lesson extends Component{
   
       <div className='LessonTitle' onClick={this.handleClick} >
         <h2>{this.props.title}</h2>
-        <Icon src={this.state.visible? arrowup:arrowdown} size={30}/>
+        <Icon src={this.state.visible? arrowup:arrowdown} key={this.state.visible}size={30}/>
       </div>
     
       <div className={this.state.visible?'visible':'no-visible'}>

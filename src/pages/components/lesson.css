@@ -40,3 +40,17 @@
   display: none;
 }
 
+.deslice-enter{
+  background: blue;
+}
+.deslice-enter-active{
+  transition: 1s;
+  background: red;
+}
+.deslice-leave{
+  background: blue;
+}
+.deslice-leave-active{
+  transition: 1s;
+  background: red;
+}

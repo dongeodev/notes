@@ -4,28 +4,43 @@ import './lesson.css'
 import Icon from '../../icons/icon'
 import arrowdown from '../../icons/arrow-down.svg'
 import arrowup from '../../icons/arrow-up.svg'
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+
 
 
 class Lesson extends Component{
   state = {
     visible: false,
+    arrow: arrowdown,
   }
   
   handleClick = (event) =>{
     event.preventDefault()
     this.setState({
       visible: !this.state.visible,
+      arrow: arrowup,
     })
   }
   render(){
     return(
       <section className='Lesson'>
-  
+     
+        
+      
+     
+      
+      
+
       <div className='LessonTitle' onClick={this.handleClick} >
         <h2>{this.props.title}</h2>
-        <Icon src={this.state.visible? arrowup:arrowdown} key={this.state.visible}size={30}/>
+        <CSSTransitionGroup
+      transitionName='deslice'
+      transitionEnterTimeout={1000}
+      transitionLeaveTimeout={1000}
+      >
+        <Icon src={this.state.visible?arrowdown:arrowup} size={30} key={this.state.visible}/>
+        </CSSTransitionGroup>
       </div>
-    
       <div className={this.state.visible?'visible':'no-visible'}>
         {
           this.props.content.map((item)=>{

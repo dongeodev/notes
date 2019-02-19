@@ -32,7 +32,7 @@ class Lesson extends Component{
       transitionEnterTimeout={500}
       transitionLeaveTimeout={500}
       >
-        <img src={this.state.visible?arrowup:arrowdown} width={30} height={30} key={this.state.visible}/>
+        <img src={this.state.visible?arrowup:arrowdown} width={30} height={20} key={this.state.visible}/>
         </CSSTransitionGroup>
       </div>
       <div className={this.state.visible?'visible':'no-visible'}>

@@ -1,9 +1,12 @@
 .Related{
   max-width: 300px;
   min-height: 100%;
-  background: rgb(48, 85, 107);
+  background-image: url('../../backgrounds/related.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  border-right: solid 1px white; 
 }
 
 h1{
@@ -13,5 +16,5 @@ h1{
 .Related a {
   margin: 10px 20px ;
   text-decoration: none;
-  color: white; 
+  color: rgb(82, 82, 82); 
 }

@@ -1,26 +1,32 @@
 .LessonWrapper{
   overflow-y: scroll;
   padding: 20px 100px 20px 100px;
-  background: rgb(248, 61, 61);
-  width: 100vw;
+  background-image: url('../../backgrounds/git.png');
+  background-size: 750px 100%;
+  background-repeat: no-repeat;
+  width: 750px;
   height: 600px;
-  will-change: background;
+  will-change: background-image;
 }
 
 .backgroundGit{
-  background: rgb(248, 61, 61);
+  background-image: url('../../backgrounds/git.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   transition: 1s;
   
 }
 .backgroundAnimations {
-  transition: opacity 1s;
-  background: rgb(41, 223, 95);
+  background-image: url('../../backgrounds/css.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   transition: 1s;
   
 }
 .backgroundReact{
-  transition: opacity 1s;
-  background: rgb(7, 182, 226);
+  background-image: url('../../backgrounds/reactjs.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   transition: 1s;
   
 }

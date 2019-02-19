@@ -3,6 +3,8 @@
   width: 100vW;
   height: 3em;
   align-items: center;
+  box-shadow: 0 3px 5px 0 rgb(165, 165, 165); 
+  
 }
 h1{
   width: 5em;

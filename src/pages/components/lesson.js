@@ -25,20 +25,14 @@ class Lesson extends Component{
     return(
       <section className='Lesson'>
      
-        
-      
-     
-      
-      
-
       <div className='LessonTitle' onClick={this.handleClick} >
         <h2>{this.props.title}</h2>
         <CSSTransitionGroup
       transitionName='deslice'
-      transitionEnterTimeout={1000}
-      transitionLeaveTimeout={1000}
+      transitionEnterTimeout={500}
+      transitionLeaveTimeout={500}
       >
-        <Icon src={this.state.visible?arrowdown:arrowup} size={30} key={this.state.visible}/>
+        <img src={this.state.visible?arrowup:arrowdown} width={30} height={30} key={this.state.visible}/>
         </CSSTransitionGroup>
       </div>
       <div className={this.state.visible?'visible':'no-visible'}>

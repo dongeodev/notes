@@ -10,21 +10,28 @@ import Footer from './footer';
 
 class Home extends Component{
   state={
-    course:this.props.data.cursos[0]
+    course:this.props.data.cursos[0],
+    backgroundWrapper: ['LessonWrapper', 'backgroundGit']
   }
   handleCourse = (item)=>{
     console.log(item-1)
     switch (item-1){
       case 0:
-        this.setState({course: this.props.data.cursos[0]})
+        this.setState({course: this.props.data.cursos[0],
+        backgroundWrapper: ['LessonWrapper', 'backgroundGit']
+        })
         
       break;
       case 1:
-        return this.setState({course: this.props.data.cursos[1]})
+        this.setState({course: this.props.data.cursos[1],
+          backgroundWrapper: ['LessonWrapper','backgroundAnimations']
+        })
         
       break;
       case 2:
-        this.setState({course: this.props.data.cursos[2]})
+        this.setState({course: this.props.data.cursos[2],
+          backgroundWrapper: ['LessonWrapper','backgroundReact']
+        })
         
       break;
       default:
@@ -46,7 +53,7 @@ class Home extends Component{
         <LessonWrapper 
           lesson={this.state.course.lesson}
           handleClick={this.handleClick}
-          
+          backgroundWrapper={this.state.backgroundWrapper}
           />
 
         </Container>

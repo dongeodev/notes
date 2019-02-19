@@ -39,18 +39,39 @@
 .no-visible{
   display: none;
 }
-
-.deslice-enter{
-  background: blue;
+.deslice{
+  
+}
+.deslice-enter{  
+  animation: spin .5s; 
+  
 }
 .deslice-enter-active{
-  transition: 1s;
-  background: red;
+  animation-duration: .5s;
 }
 .deslice-leave{
-  background: blue;
+  display: none;
 }
 .deslice-leave-active{
-  transition: 1s;
-  background: red;
+
+}
+@keyframes spin{
+  0%{
+    transform: rotate(30deg)
+  }
+  15%{
+    transform: rotate(60deg)
+  }
+  /* 30%{
+    transform: rotate(100deg)
+  }
+  50%{
+    transform: rotate(1200deg)
+  }
+  80%{
+    transform: rotate(180deg)
+  } */
+  100%{
+    transform: rotate(360deg)
+  }
 }

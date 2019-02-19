@@ -1,8 +1,27 @@
 .LessonWrapper{
   overflow-y: scroll;
   padding: 20px 100px 20px 100px;
-  background: rgb(241, 241, 241);
+  background: rgb(248, 61, 61);
   width: 100vw;
   height: 600px;
+  will-change: background;
+}
+
+.backgroundGit{
+  background: rgb(248, 61, 61);
+  transition: 1s;
+  
+}
+.backgroundAnimations {
+  transition: opacity 1s;
+  background: rgb(41, 223, 95);
+  transition: 1s;
+  
+}
+.backgroundReact{
+  transition: opacity 1s;
+  background: rgb(7, 182, 226);
+  transition: 1s;
+  
 }
 

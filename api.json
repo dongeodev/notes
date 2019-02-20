@@ -65,84 +65,442 @@
           "cover": "./images/covers/mejorandola.jpg",
           "src": "https://platzi.com/clases/1170-git-github/8444-git-tag-etiquetando-confirmaciones/",
           "id": 5
+        },
+        {
+          "title": "git log (Revisando la historia de nuestro proyecto)",
+          "content":[
+            "git log : Muestra el historial de commit con fecha y autor",
+            "git log --oneline : Muestra un resumen de los commit",
+            "git log --oneline --graph : Muestra la grafica de commit con sus ramas",
+            "git log -# : Muestra el numero especifico de commit que quieres ver"
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8445-git-log-revisando-la-historia-de-nuestro-proyecto/",
+          "id": 6
+        },
+        {
+          "title": "git diff (Revisando los cambios entre versiones)",
+          "content":[
+            "git diff [SHA1V1] [SHA1V2]: Muestra la diferencia entre commit",
+            "git diff [tagV1] [tagV2]: tambien se pueden usar los tags"
+            
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8446-git-diff-revisando-los-cambios-entre-versiones/",
+          "id": 7
+        },
+        {
+          "title": "git reset -- soft",
+          "content":[
+            "git reset --soft [SHA1]: Elimina los cambios hasta el hasta el commit del [SHA 1], pero deja los cambios en el staging area",
+            "Nota: Hay que tener en cuenta que si usas git reset --soft Tienes 10 commits y borras el numero 7, los commits 8, 9 y 10 también se borran, y tendras un nuevo commit que tomara el numero 8."
+           
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8447-git-reset-soft/",
+          "id": 8
+        },
+        {
+          "title": "git reset -- mixed",
+          "content":[
+            "git reset --mixed [SHA1]: Elimina los cambios, también del staging area.",
+            "Nota: La diferencia con git reset --soft es que este deja los cambio en staging"
+            
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8448-git-reset-mixed/",
+          "id": 9
+        },
+        {
+          "title": "git reset --hard",
+          "content":[
+            "git reset --hard [SHA1]: Elimina los cambios por completo hasta el commit del [SHA 1]"
+           
+            
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8567-git-reset-hard/",
+          "id": 10
+        },
+        {
+          "title": "git branch (Múltiples variantes del repositorio)",
+          "content":[
+            "git branch [nombre]: Crea una rama",
+            "git branch -d-/D [nombre]: Elimina una rama",
+            "git branch -m [nombre] [nombre nuevo]: Renombrar una rama",
+            "git branch -l: Lista de ramas"
+           
+            
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8451-git-branch-multiples-variantes-del-repositorio/",
+          "id": 11
+        },
+        {
+          "title": "git checkout (Moviéndonos entre ramas y versiones)",
+          "content":[
+            "git checkout [nombre/sha1]: Nos permite movernos entre ramas o commits, sirve para debugging",
+            "git checkout -b [nombre_rama]: Crea una rama si se cambia a esa rama sin necesidad de usar git branch"
+           
+           
+            
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8452-git-checkout-moviendonos-entre-ramas-y-versiones/",
+          "id": 12
+        },
+        {
+          "title": "git merge (Mezclando ramas y resolviendo conflictos)",
+          "content":[
+            "git merge [nombre_rama]: mezcla la rama actual con la rama deseada"
+                   
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8454-git-merge-mezclando-ramas-y-resolviendo-conflictos/",
+          "id": 13
+        },
+        {
+          "title": "git rebase (Reescribe la historia de tu proyecto)",
+          "content":[
+            "git rebase [nombre_rama]: Hace la mezcla de acuerdo al orden cronologico que se fueron creando",
+            "Nota: se recomiendo no usar esto cuando se esta trabajando en equipo. Usarlo solo de manera local"
+                   
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8455-git-rebase-reescribe-la-historia-de-tu-proyecto/",
+          "id": 14
+        },
+        {
+          "title": "git stash (Guardando cambios temporalmente)",
+          "content":[
+            "git stash: Guarda el trabajo actual de manera temporal. (Archivos modificados o eliminados)",
+            "git stash -u: Crea un stash con todos los archivos. (Añadiendo los creados Untracked)",
+            "git stash list: Permite visualizar todos los stash existentes.",
+            "git stash clear: Elimina todos los stash existentes.",
+            "git stash show stash@{num_stash}: Muestra los archivos cambiados en ese stash.",
+            "git stash show -p stash@{num_stash}: Muestra los archivos cambiados en ese stash en detalle.",
+            "git stash drop stash@{num_stash}: Elimina un stash específico.",
+            "git stash apply: Aplica el stash más reciente. El que tiene num_stash=0.",
+            "git stash apply stash@{num_stash}: Aplica los cambios de un stash específico."
+            
+                   
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8456-git-stash-guardando-cambios-temporalmente/",
+          "id": 15
+        },
+        {
+          "title": "Cherry pick eligiendo commits selectivamente",
+          "content":[
+            "git cherry-pick [SHA1] : Mueves un commit a una rama que desees"                     
+                   
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8458-cherry-pick-eligiendo-commits-selectivamente/",
+          "id": 16
+        },
+        {
+          "title": "git clone/fork (Clonando repositorios remotos)",
+          "content":[
+            "git clone [https/ssh]: Para clonar un repositorio en la pc.",
+            "Nota: El fork nos permite clonar un repositorio hacia nuesta cuenta de GitHub"                     
+                   
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8462-git-clone-fork-clonando-repositorios-remotos/",
+          "id": 17
+        },
+        {
+          "title": "Añadiendo una llave ssh a GitHub",
+          "content":[
+            "ssh-keygen -t rsa -b 4096 -C 'Email de github': Crear llave",
+            "cat ~/.ssh/id_rsa.pub: Copiar la llave",
+            "Nota: Vas a tu perfil en github y copias la llave"                     
+                   
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8463-anadiendo-una-llave-ssh-a-github/",
+          "id": 18
+        },
+        {
+          "title": "git remote (Añadiendo un repositorio remoto a uno local)",
+          "content":[
+            "git remote add [origin] [SSH/HTTPS] Conecta un repositorio con nuestro equipo local.",
+            "git remote -v Lista las conexiones existentes.",
+            "git remote remove [origin] Elimina una conexión con algún repositorio.",
+            "git push -u origin master: el primer push"                     
+                   
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8464-git-remote-anadiendo-un-repositorio-remoto-a-uno-l/",
+          "id": 19
+        },
+        {
+          "title": "git pull/fetch (Trayendo cambios desde el repositorio remoto)",
+          "content":[
+            "git fetch [repo] [rama]: Trae los archivos del repo remoto",
+            "git merge [ramas] --allow-unrelated-histories: Vamos a mezclar la rama del repositorio remoto con la rama master del local",
+            "git pull [repo] [rama]: Trae archivos del repo remoto y los mezcla con la rama que le indiquemos"                     
+                   
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8465-git-fetch-trayendo-cambios-desde-el-repositorio-re/",
+          "id": 20
+        },
+        {
+          "title": "git push (Enviando cambios al repositorio remoto)",
+          "content":[
+            "git push [repo] [rama] Envia los archivos al repo remoto",
+            "git push [repo] --tags Envia los tags al repo remoto",
+            "git pull [repo] [rama] Trae archivos del repo remoto y los mezcla con la rama que le indiquemos"                     
+                   
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8466-git-push-enviando-cambios-al-repositorio-remoto/",
+          "id": 21
+        },
+        {
+          "title": ".gitignore (Ignorando archivos no deseados)",
+          "content":[
+            "touch .gitignore Crea el archivo y agrega el nombre de archivo que no"
+                                 
+                   
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1170-git-github/8472-gitignore-ignorando-archivos-no-deseados/",
+          "id": 22
         }
       ]
     },
     {
       "id": 2,
       "profesor": "LeonidasEsteban",
-      "title": "Animaciontes Web",
+      "title": "Animaciones Web",
       "lesson": [
         {
-          "title": "$Comandos útiles de la terminal",
+          "title": "Sintaxis de transiciones",
           "content": [ 
-          "cd:  Moverse entre carpetas",
-          "mkdir: crear carpetas",
-          "ls: lista de archivos en una carpeta",          
-          "touch: Crear un archivo",
-          "rm [Nombre-archivo]: Borra el archivo",
-          "rm -rf [Nombre-carpeta]: Borra carpeta",
-          "clear: limpia la terminal"
+          "transition-property: width, height; / Qué propiedades va a cambiar en la transición",
+          "transition-duration: 1s; / Cuánto tiempo va a durar la transición",
+          "transition-delay: 250ms; / Cuánto tiempo va a tardar la transición en ocurrir",          
+          "transition-timing-function: ease; / Función que determina de qué forma se calculan los valores intermedios de la transición",
+          "transition: width 1s 250ms ease, height 1s 250ms ease; / Cada propiedad a cambiar se separa con una coma"
+          
         ],
           "type": "strg",
           "cover": "./images/covers/responsive.jpg",
-          "src": "https://platzi.com/clases/1170-git-github/8440-comandos-utiles-de-la-terminal/",
+          "src": "https://platzi.com/clases/1103-animaciones-web/6822-sintaxis-de-transiciones/",
           "id": 1
         },
         {
-          "title": "Creando Repositorios",
-          "content": ["git init: nos crea un repositorio de manera local y lo hará en la carpeta donde estamos posicionados o se le puede pasar [nombre_de_la_carpeta] y creará la carpeta con ese nombre. Los repositorios se crean como carpetas oculas, para eliminarlos puedes usar el explorardor de archivos o rm-rf [nombre del repo]"],
+          "title": "Sintaxis de Transformaciones",
+          "content": [
+            "transform: rotate(deg) skew(deg) traslate(px) scale(0-1)",
+            "rotate: rotar elemento",
+            "skew/sesgar: inclina el elemento",
+            "traslate: mueve el elemento",
+            "scale: cambia el tamaño (%)"
+          
+          ],
           "type": "strg",
           "cover": "./images/covers/optimizar.jpg",
-          "src": "https://platzi.com/clases/1170-git-github/8441-git-init-creando-repositorios/",
+          "src": "https://platzi.com/clases/1103-animaciones-web/6824-sintaxis-de-transformaciones/",
           "id": 2
         },
         {
-          "title": "Agregando, quitando y viendo el estatus de archivos",
+          "title": "Transformaciones de rotación",
           "content": [
-            "git add file: Agraga el archivo al staging",
-            "git add -A: Agraga todos los archivos pendientes al staging",
-            "git status: Para ver en que estado se encuentran los archivos",
-            "git rm --cached: Nos devolvemos un paso",
-            "git rm -f file :Elimina el archivo por completo",
-            "git add -n file : Que no haga nada"],
+            "transform: rotateX(45deg); / Rotación en el eje X",
+            "transform: rotateY(45deg); / Rotación en el eje Y",
+            "transform: rotate(-45deg); / Rotación a lado contrario de las manecillas del reloj",
+            "transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg); / Animación de transformaciones",
+            "transform: rotate3d(x,y,z,rotate); / Rotación en 3D, se coloca 1 en los grados que se desea girar",
+            "transform: rotate3d(1,0,0,45deg); / Rotación en el eje X",
+            "transform: rotate3d(0,1,0,45deg); / Rotación en el eje Y"
+          
+          ],
           "type": "strg",
           "cover": "./images/covers/bitcoin.jpg",
-          "src": "https://platzi.com/clases/1170-git-github/8442-git-add-rm-status-agregando-quitando-y-viendo-el-7/",
+          "src": "https://platzi.com/clases/1103-animaciones-web/6825-transformaciones-de-rotacion/",
           "id": 3
         },
         {
-          "title": "git commit (Confirmando cambios)",
+          "title": "Transformaciones de traslación y perspectiva",
           "content": [
-            "git commit -m “mensaje” : Confirma cambios. Se recomienda ser descriptivo en el mensaje",
-            "git commit -m “mensaje” -amend : agregar nuevos cambios al ultimo commit",
-            "git log : Nos muestra la historia de todos los commits que hemos realizados."],
+            "perspective: 200px;",
+            " perspective-origin: top right;",
+            "transform: traslate (x);",
+            "transform: traslate (x , y);",
+            "transform: traslateX (px);",
+            "transform: traslateY (px)",
+            "transform: traslateZ (px);",
+            "transform: traslate3d (x , y , z);"
+          
+          ],
           "type": "strg",
           "cover": "./images/covers/html5.jpg",
-          "src": "https://platzi.com/clases/1170-git-github/8443-git-commit-confirmando-cambios/",
+          "src": "https://platzi.com/clases/1103-animaciones-web/6826-transformaciones-de-traslacion-y-perspectiva/",
           "id": 4
         },
         {
-          "title": "git tag (Etiquetando confirmaciones)",
+          "title": "Transformaciones de escala",
           "content": [
-            "git tag -a -m'': Nos permite agregar etiquetas a nuestros cambios. para agregar tag a otro commit se usa el SHA1",
-            "git tag -l: Nos muestra la lista de etiquetas.",
-            "git tag -f [SHA1]: Para renombrar. Se coloca el SHA1",
-            "git tag -d : Para borar."],
+            "transform: scale (xy);",
+            "transform: scale (x , y);"
+          ],
           "type": "strg",
           "cover": "./images/covers/mejorandola.jpg",
-          "src": "https://platzi.com/clases/1170-git-github/8444-git-tag-etiquetando-confirmaciones/",
+          "src": "https://platzi.com/clases/1103-animaciones-web/6828-transformaciones-de-escala7357/",
           "id": 5
+        },
+        {
+          "title": "Transformaciones de sesgados",
+          "content": [
+            "transform: skew (x);",
+            "transform: skew (x , y); / skew(deg)"
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1103-animaciones-web/6827-transformaciones-de-escala/",
+          "id": 6
+        },
+        {
+          "title": "Punto de transformación",
+          "content": [
+            "transform-origin: x , y ; / cambia el punto de referencia para la animacion",
+            "transform-origin right, top;"
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1103-animaciones-web/6829-punto-de-transformacion/",
+          "id": 7
+        },
+        {
+          "title": "Sintaxis (animation)",
+          "content": [
+            "animation-name: [nombre]; / Se coloca un nombre al elemento que se quiere animar",
+            "animation-delay: 1000ms; / tiempo que tarda en ejecutarse la animacion desde que carga o es acitvada",
+            "animation-duration: 1s ;/ tiempo que dura 1 ciclo de la animacion",
+            "animation-direction: [reverse,alternate]; / en que sentido se ejecuta la animacion.",
+            "animation-iteration-count: [#, infinite]; / define cuantas veces se repite el ciclo de animacion",
+            "animation-timming-funtion: [ease, ease-in, ease-out, ease-in-out, linear, steps(#), cubic-bezeir(1,1,1,1)] ; / define si la animacion entra o sale suavizada (aceleracion)",
+            "animation-play-state: [running, paused]; / permite pausar o iniciar una animacion",
+            "animation-fill-mode: [forward]; / fija en que estado quedara la animacion despues de ocurrir"
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1103-animaciones-web/6830-sintaxis/",
+          "id": 8
+        },
+        {
+          "title": "Aceleración y curva de bezier",
+          "content": [
+            "animation-timming-funtion: cubic-bezeir(1,1,1,1); / Se puede jugar con los valores para generar efectos como el rebote (aceleracion)",
+            "Nota: cubic-bezier.com /para personalizar la curva "
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1103-animaciones-web/6831-aceleracion-y-curva-de-bezier/",
+          "id": 9
+        },
+        {
+          "title": "Multiples Animaciones",
+          "content": [
+            "animation-name: [nombre1], [nombre2]; / Se coloca un nombre al elemento que se quiere animar",
+            "Nota: Cada animacion tiene su keyframe donde se colocan las carcteristicas ha animar"
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1103-animaciones-web/6832-multiples-animaciones/",
+          "id": 10
+        },
+        {
+          "title": "Detectar eventos de animaciones CSS desde JS",
+          "content": [
+            "<script>",
+            "const $cuadrado = document.getElementById('cuadrado');",
+            "$cuadrado.addEventListener('nombre del event', 'que hago cuando el evento ocurra')",
+            "$cuadrado.addEventListener('animationstart'/'animationiteration'/'animationend', (event) => {}",
+            "if (event.animationName === 'rebote') {}",
+            "$cuadrado.style.animationName = 'cuadrado escalera'; ",
+            "$cuadrado.style.animationDuration = '3s';",
+            "</script>"
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1103-animaciones-web/6833-detectar-eventos-de-animaciones-css-desde-js/",
+          "id": 11
+        },
+        {
+          "title": "Optimizar render con will-change y developer tools",
+          "content": [
+            "will-change: opacity, transform;",
+            "will-change se usa para avisar al navegador que una propiedad va a cambiar. las transformaciones y la opacidad estan optimizadas en los navegadores por eso conviene usa will-change"
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1103-animaciones-web/6834-optimizar-render-con-will-change-y-developer-tools/",
+          "id": 12
+        },
+        {
+          "title": "Propiedades animables",
+          "content": [
+            "web-info: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties"
+            
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1103-animaciones-web/6835-propiedades-animables/",
+          "id": 13
+        },
+        {
+          "title": "element.animate",
+          "content": [
+            "Es el api de JS para escribir las animaciones en JS"
+            
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1103-animaciones-web/6836-elementanimate/",
+          "id": 14
+        },
+        {
+          "title": "element.animate",
+          "content": [
+            "Ver video: en platzi"
+            
+          ],
+          "type": "strg",
+          "cover": "./images/covers/mejorandola.jpg",
+          "src": "https://platzi.com/clases/1103-animaciones-web/6837-controlar-animaciones/",
+          "id": 15
         }
       ]
     },
     {
       "id": 3,
       "profesor": "LeonidasEsteban",
-      "title": "React.js",
+      "title": "CSS Grid Layout",
       "lesson": [
         {
-          "title": "$Comandos útiles de la terminal",
+          "title": "Comandos útiles de la terminal",
           "content": [ 
           "cd:  Moverse entre carpetas",
           "mkdir: crear carpetas",
@@ -204,6 +562,7 @@
         }
       ]
     }
+
 
   ]
 }

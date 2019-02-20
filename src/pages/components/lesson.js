@@ -26,7 +26,13 @@ class Lesson extends Component{
       <section className='Lesson'>
      
       <div className='LessonTitle' onClick={this.handleClick} >
-        <h2>{this.props.title}</h2>
+      <CSSTransitionGroup
+        transitionName='mount'
+        transitionEnterTimeout={500}
+        transitionLeaveTimeout={500}
+      >
+        <h2 key={this.props.title}>{this.props.title}</h2>
+        </CSSTransitionGroup>
         <CSSTransitionGroup
       transitionName='deslice'
       transitionEnterTimeout={500}
@@ -35,13 +41,19 @@ class Lesson extends Component{
         <img src={this.state.visible?arrowup:arrowdown} width={30} height={20} key={this.state.visible}/>
         </CSSTransitionGroup>
       </div>
-      <div className={this.state.visible?'visible':'no-visible'}>
+      <CSSTransitionGroup
+        transitionName='drop'
+        transitionEnterTimeout={500}
+        transitionLeaveTimeout={500}
+      >
+      <div className={this.state.visible?'visible':'no-visible'} key={this.state.visible}>
         {
           this.props.content.map((item , i)=>{
            return <LessonContent text={item} key={item} i={i+1}/>
           })
         }
       </div>
+        </CSSTransitionGroup>
       
       </section>
     )

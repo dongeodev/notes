@@ -1,8 +1,8 @@
 .Lesson{
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   background: white;
   transition: 1s;
-  cursor: pointer;
+  
   
 }
 .Lesson:hover{
@@ -11,14 +11,14 @@
 .LessonTitle{
   border-left: solid 2px rgba(2, 2, 2, 0.3);
   border-bottom: solid 2px rgba(2, 2, 2, 0.3);
- 
+  margin-top: 20px;
   color:rgb(63, 67, 71);
   transition: 1s;
   font-size: 0.8em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  cursor: pointer;
 }
 
 .LessonTitle:hover{
@@ -39,6 +39,7 @@
   padding-top: 0.8em;
   padding-right: 4em;
   box-shadow: 0 0 5px 3px rgba(2, 2, 2, 0.089);
+  
 }
 .no-visible{
   display: none;
@@ -51,7 +52,7 @@
   
 }
 .deslice-enter-active{
-  animation-duration: .5s;
+  /* animation-duration: .5s; */
 }
 .deslice-leave{
   display: none;
@@ -77,5 +78,100 @@
   } */
   100%{
     transform: rotate(360deg)
+  }
+}
+
+
+.mount{
+
+}
+.mount-enter{
+  animation: show 0.5s;
+  will-change: opacity scale;
+}
+
+.mount-enter-active{
+  
+}
+
+.mount-leave{
+  display:none;
+}
+.mount-leave-active{
+
+}
+
+@keyframes show{
+  0%{
+    opacity: 0.1;
+    /* transform: scale(0.4); */
+    
+  }
+  25%{
+    opacity: 0.25;
+    /* transform: scale(0.5); */
+    
+  }
+  50%{
+    opacity: 0.5;
+    /* transform: scale(0.6); */
+    
+  }
+  75%{
+    opacity: 0.75;
+    /* transform: scale(0.85); */
+    
+  }
+  100%{
+    opacity: 1;
+    /* transform: scale(1); */
+    
+  }
+}
+.drop{
+
+}
+.drop-enter{
+  animation: droping 0.5s;
+  will-change: opacity;
+  transform-origin: top;
+}
+
+.drop-enter-active{
+  
+}
+
+.drop-leave{
+  display:none;
+}
+.drop-leave-active{
+
+}
+
+@keyframes droping{
+  0%{
+    opacity: 0.1;
+    /* transform: rotateX(-90deg); */
+    
+  }
+  25%{
+    opacity: 0.25;
+    /* transform: rotateX(-75deg); */
+    
+  }
+  50%{
+    opacity: 0.5;
+    /* transform: rotateX(-45deg); */
+    
+  }
+  75%{
+    opacity: 0.75;
+    /* transform: rotateX(-25deg); */
+    
+  }
+  100%{
+    opacity: 1;
+    /* transform: rotateX(0deg); */
+    
   }
 }

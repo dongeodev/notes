@@ -1,3 +1,10 @@
 li{
   margin-right: 4em;
+  cursor: pointer;
+  
+}
+
+li:hover{
+  border-bottom: solid 1px black;
+  
 }

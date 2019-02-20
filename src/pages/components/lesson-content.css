@@ -1,3 +1,15 @@
 .LessonContent{
+display: flex;
 
+}
+
+.number{
+  font-weight: 100;
+  margin: 0;
+  padding: 0 10px 0 0;
+  
+}
+.content{
+  font-weight: 400;
+  margin: 0 0 0 20px;
 }

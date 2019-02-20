@@ -1,5 +1,5 @@
 .Related{
-  max-width: 300px;
+  max-width: 200px;
   min-height: 100%;
   background-image: url('../../backgrounds/related.png');
   background-size: cover;
@@ -14,7 +14,14 @@ h1{
 }
 
 .Related a {
+  display: flex;
   margin: 10px 20px ;
   text-decoration: none;
   color: rgb(82, 82, 82); 
+  
+}
+
+.RelatedAContainer:hover{
+  background: rgba(2, 2, 2, 0.3);
+  cursor: pointer;
 }

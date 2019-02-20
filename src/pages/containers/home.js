@@ -11,26 +11,33 @@ import Footer from '../components/footer';
 class Home extends Component{
   state={
     course:this.props.data.cursos[0],
-    backgroundWrapper: ['LessonWrapper', 'backgroundGit']
+    backgroundWrapper: ['LessonWrapper', 'backgroundGit'],
+    liMenu: 'git',
   }
   handleCourse = (item)=>{
     console.log(item-1)
     switch (item-1){
       case 0:
-        this.setState({course: this.props.data.cursos[0],
-        backgroundWrapper: ['LessonWrapper', 'backgroundGit']
+        this.setState({
+          course: this.props.data.cursos[0],
+          backgroundWrapper: ['LessonWrapper', 'backgroundGit'],
+          liMenu: 'git',
         })
         
       break;
       case 1:
-        this.setState({course: this.props.data.cursos[1],
-          backgroundWrapper: ['LessonWrapper','backgroundAnimations']
+        this.setState({
+          course: this.props.data.cursos[1],
+          backgroundWrapper: ['LessonWrapper','backgroundAnimations'],
+          liMenu: 'animations',
         })
         
       break;
       case 2:
-        this.setState({course: this.props.data.cursos[2],
-          backgroundWrapper: ['LessonWrapper','backgroundReact']
+        this.setState({
+          course: this.props.data.cursos[2],
+          backgroundWrapper: ['LessonWrapper','backgroundReact'],
+          liMenu: 'reactjs',
         })
         
       break;
@@ -44,11 +51,11 @@ class Home extends Component{
     return(
       <HomeLayout>
         
-        <Header courses={this.props.data.cursos} handleCourse={this.handleCourse}/>
+        <Header courses={this.props.data.cursos} handleCourse={this.handleCourse} />
         <Container>
 
         <RelatedLayout>
-          <Related cursos={this.props.data.cursos}/>
+          <Related course={this.state.course}/>
         </RelatedLayout>
         <LessonWrapper 
           lesson={this.state.course.lesson}

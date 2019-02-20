@@ -11,8 +11,8 @@ function Header (props){
      <div className='menuContainer'>
       <ul className='menu'>
         {
-          props.courses.map((item)=>{
-            return <MenuCourses handleCourse={props.handleCourse}{...item} key={item.id}/>
+          props.courses.map((item,i)=>{
+            return <MenuCourses handleCourse={props.handleCourse}{...item} key={item.id} i={i}/>
             // return console.log(item)
           })
         }

@@ -19,5 +19,9 @@ h1{
 .menu {
   list-style: none;
   display: flex;
+
+}
+.menu li:hover{
+  
 }
 

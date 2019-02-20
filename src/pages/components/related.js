@@ -5,10 +5,10 @@ function Related (props){
   return(
     <div className='Related'> 
 
-      <h1>{props.cursos[0].title}</h1>
+      <h1>{props.course.title}</h1>
     {
-      props.cursos[0].lesson.map((item)=>{
-       return <a href={item.src} target='_blanck' key={item.id}>{item.title}</a>
+      props.course.lesson.map((item)=>{
+       return <div className='RelatedAContainer'><a href={item.src} target='_blanck' key={item.id}>{item.title}</a></div>
       })
   
     }

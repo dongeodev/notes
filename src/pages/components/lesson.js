@@ -37,8 +37,8 @@ class Lesson extends Component{
       </div>
       <div className={this.state.visible?'visible':'no-visible'}>
         {
-          this.props.content.map((item)=>{
-           return <LessonContent text={item} key={item}/>
+          this.props.content.map((item , i)=>{
+           return <LessonContent text={item} key={item} i={i+1}/>
           })
         }
       </div>

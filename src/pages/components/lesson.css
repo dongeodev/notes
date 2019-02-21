@@ -1,7 +1,7 @@
 .Lesson{
   margin-bottom: 2em;
   background: white;
-  transition: 1s;
+  transition: 0.5s;
   
   
 }
@@ -13,22 +13,26 @@
   border-bottom: solid 2px rgba(2, 2, 2, 0.3);
   margin-top: 20px;
   color:rgb(63, 67, 71);
-  transition: 1s;
+  transition: 0.5s;
   font-size: 0.8em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  
 }
 
 .LessonTitle:hover{
-  box-shadow: 0 0 10px 0 rgba(94, 194, 252, 0.4)
+  box-shadow: 0 0 10px 0 rgba(94, 194, 252, 0.5);
+  
 }
 
 .LessonTitle h2{
   padding-left: 2em;
   padding-top: 0.8em;
   margin: 0;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 300;
 
 }
 

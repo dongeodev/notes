@@ -1,10 +1,15 @@
 li{
   margin-right: 4em;
   cursor: pointer;
+  padding: 0.3em 0.2em;
+
   
 }
 
 li:hover{
   border-bottom: solid 1px black;
+  background: rgba(0, 0, 0, 0.8);
+  color:white;
+  border-radius: 3px;
   
 }

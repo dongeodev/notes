@@ -6,8 +6,10 @@ import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 function Related (props){
   return(
     <div className='Related'> 
+      <div className={props.backgroundWrapper[2]}>
 
       <h1>{props.course.title}</h1>
+      </div>
       <CSSTransitionGroup
         transitionName='mount'
         transitionEnterTimeout={500}

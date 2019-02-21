@@ -11,7 +11,7 @@ import Footer from '../components/footer';
 class Home extends Component{
   state={
     course:this.props.data.cursos[0],
-    backgroundWrapper: ['LessonWrapper', 'backgroundGit'],
+    backgroundWrapper: ['LessonWrapper', 'backgroundGit', 'titleGit'],
     liMenu: 'git',
   }
   handleCourse = (item)=>{
@@ -20,7 +20,7 @@ class Home extends Component{
       case 0:
         this.setState({
           course: this.props.data.cursos[0],
-          backgroundWrapper: ['LessonWrapper', 'backgroundGit'],
+          backgroundWrapper: ['LessonWrapper', 'backgroundGit','titleGit'],
           liMenu: 'git',
         })
         
@@ -28,7 +28,7 @@ class Home extends Component{
       case 1:
         this.setState({
           course: this.props.data.cursos[1],
-          backgroundWrapper: ['LessonWrapper','backgroundAnimations'],
+          backgroundWrapper: ['LessonWrapper','backgroundAnimations','titleAnimations'],
           liMenu: 'animations',
         })
         
@@ -36,7 +36,7 @@ class Home extends Component{
       case 2:
         this.setState({
           course: this.props.data.cursos[2],
-          backgroundWrapper: ['LessonWrapper','backgroundReact'],
+          backgroundWrapper: ['LessonWrapper','backgroundReact','titleReact'],
           liMenu: 'reactjs',
         })
         
@@ -55,7 +55,10 @@ class Home extends Component{
         <Container>
 
         <RelatedLayout>
-          <Related course={this.state.course}/>
+          <Related 
+            course={this.state.course}
+            backgroundWrapper={this.state.backgroundWrapper}
+            />
         </RelatedLayout>
         <LessonWrapper 
           lesson={this.state.course.lesson}

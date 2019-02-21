@@ -8,7 +8,7 @@ class LessonContent extends PureComponent{
     return(
       <div className='LessonContent'>
           
-          <p className='number'>>_.</p> <p className='content'><b>{format(this.props.text)}</b>{format2(this.props.text)}</p>
+          <p className='number'>>_.</p> <p className='content'><b className='code'>{format(this.props.text)}</b>{format2(this.props.text)}</p>
        
       </div>
     )

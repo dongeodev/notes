@@ -7,6 +7,7 @@
   width: 750px;
   height: 100vh;
   will-change: background-image;
+  transition: 1s;
 }
 
 .backgroundGit{

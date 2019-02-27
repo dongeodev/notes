@@ -6,12 +6,14 @@ import LessonWrapper from '../components/lesson-wrapper'
 import Header from '../components/header'
 import Container from '../components/container'
 import Footer from '../components/footer';
+import ProfileWrapper from '../components/profile-wrapper';
+import Profile from '../components/profile';
 
 
 class Home extends Component{
   state={
     course:this.props.data.cursos[0],
-    backgroundWrapper: ['LessonWrapper', 'backgroundGit', 'titleGit'],
+    backgroundWrapper: ['LessonWrapper', 'backgroundGit', 'titleGit', 'nameGit'],
     liMenu: 'git',
   }
   handleCourse = (item)=>{
@@ -20,7 +22,7 @@ class Home extends Component{
       case 0:
         this.setState({
           course: this.props.data.cursos[0],
-          backgroundWrapper: ['LessonWrapper', 'backgroundGit','titleGit'],
+          backgroundWrapper: ['LessonWrapper', 'backgroundGit','titleGit','nameGit'],
           liMenu: 'git',
         })
         
@@ -28,7 +30,7 @@ class Home extends Component{
       case 1:
         this.setState({
           course: this.props.data.cursos[1],
-          backgroundWrapper: ['LessonWrapper','backgroundAnimations','titleAnimations'],
+          backgroundWrapper: ['LessonWrapper','backgroundAnimations','titleAnimations','nameAnimations'],
           liMenu: 'animations',
         })
         
@@ -36,7 +38,7 @@ class Home extends Component{
       case 2:
         this.setState({
           course: this.props.data.cursos[2],
-          backgroundWrapper: ['LessonWrapper','backgroundReact','titleReact'],
+          backgroundWrapper: ['LessonWrapper','backgroundReact','titleReact', 'nameReact'],
           liMenu: 'reactjs',
         })
         
@@ -65,6 +67,11 @@ class Home extends Component{
           handleClick={this.handleClick}
           backgroundWrapper={this.state.backgroundWrapper}
           />
+        <ProfileWrapper>
+          <Profile
+          backgroundWrapper={this.state.backgroundWrapper[3]}
+          />
+        </ProfileWrapper>
 
         </Container>
         <Footer/>

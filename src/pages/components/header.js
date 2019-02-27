@@ -1,19 +1,31 @@
-import React from 'react'
+import React, {Component} from 'react'
 import MenuCourses from './menu-courses'
 import './header.css'
+import iconMenu from '../../backgrounds/menu.svg'
 
 
-function Header (props){
-
+class Header extends Component{
+  state ={
+    menu: false,
+  }
+handleClick = (event)=>{
+  this.setState({
+    menu: !this.state.menu
+  })
+}
+render(){
+ 
   return(
     <section className='Header'>
      <h1>Courses</h1>
-     <div className='menuContainer'>
+     <img className="icon-menu hamburger-menu" id="hamburger-menu" src={iconMenu} width={40} height={40} onClick={this.handleClick}/>
+  
+     <div className={`menuContainer ${this.state.menu?'menuVisible':null}`}>
       <ul className='menu'>
         {
-          props.courses.map((item,i)=>{
-            return <MenuCourses handleCourse={props.handleCourse}{...item} key={item.id} i={i}/>
-            // return console.log(item)
+          this.props.courses.map((item,i)=>{
+            return <MenuCourses handleCourse={this.props.handleCourse}{...item} key={item.id} i={i}/>
+           
           })
         }
       </ul>
@@ -22,5 +34,5 @@ function Header (props){
   
   )
 }
-
+}
 export default Header

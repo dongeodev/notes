@@ -32,3 +32,8 @@
   
 }
 
+@media screen and (max-width:768px){
+.LessonWrapper{
+  padding: 0px 30px;
+}
+}

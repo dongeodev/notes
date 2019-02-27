@@ -5,6 +5,8 @@
   align-items: center;
   background: rgb(255, 255, 255);
   color: rgb(8, 8, 8);
+  margin-top: 3px;
+  box-shadow: 0 -3px 5px 0 rgb(165, 165, 165); 
 }
 .Footer p{
   margin: 0 3em;

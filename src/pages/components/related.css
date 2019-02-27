@@ -121,7 +121,7 @@ h1{
     max-width: 100%;
     height: 100px;
     width: 100vw;
-    background-image: url('../../backgrounds/related.png');
+    background: url('../../backgrounds/related.png');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

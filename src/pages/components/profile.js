@@ -17,11 +17,12 @@ function Profile(props){
     //  height={150}
      />
      
+     <div className='texts'>
      <h4 className={props.backgroundWrapper}><img className='icon-name'  src={code} width={20} height={20} alt='icon'/>Ing. Georgie Duarte</h4>
      <h6><img src={email} width={15} height={15} alt='email' />   geo.du07@gmail.com</h6>
      <h6><img src={telephone} width={15} height={15} alt='phone' />  3144877407</h6>
      <h6><img src={worldwide} width={15} height={15} alt='web'/>  www.geoing.com</h6>
-     
+     </div>
      <div className='certificado-container'>
      <img
      className='certificado'

@@ -3,11 +3,11 @@
 
 .Header{
   display: flex;
-  width: 100vW;
+  width: 100%;
   height: 3em;
   align-items: center;
   box-shadow: 0 3px 5px 0 rgb(165, 165, 165); 
-  
+  position: relative;
 }
 h1{
   width: 5em;
@@ -33,10 +33,14 @@ h1{
 @media screen and (max-width:768px){
 
 .Header{
-  display: flex;
-  justify-content: space-between;
   height: auto;
-  align-items: center;
+  align-items: center;  
+}
+h1{
+  margin: 25px;
+}
+.menu{
+  padding: 0;
 }
 .menuContainer{
   display: block;
@@ -56,11 +60,40 @@ h1{
 .hamburger-menu{
   display: block;
   position: absolute;
-  top:0;
+  top: 5px;
   right: 0;
   margin: 0 10px 0 0;
   padding: 10px;
   border: solid 1px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 }
+}
+
+@media screen and (max-width:480px){
+  .Header{
+    min-height: 50px;
+
+  }
+  .Header h1{
+    margin: 0 0 0 10px;
+  }
+  .hamburger-menu{
+    margin: 0 5px 0 0;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+
+  }
+  /* .menuContainer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+
+  } */
+
 }

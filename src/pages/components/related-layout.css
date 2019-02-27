@@ -2,3 +2,12 @@
   height: 100vh;
   max-width: 250px;
 }
+
+@media screen and (max-width:480px){
+.RelatedLayout{
+  max-width: 100%;
+  display: flex;
+  height: auto;
+  margin-bottom: 20px;
+}
+}

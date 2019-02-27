@@ -18,13 +18,13 @@ render(){
   return(
     <section className='Header'>
      <h1>Courses</h1>
-     <img className="icon-menu hamburger-menu" id="hamburger-menu" src={iconMenu} width={40} height={40} onClick={this.handleClick}/>
+     <img className="icon-menu hamburger-menu" id="hamburger-menu" src={iconMenu} width={35} height={35} onClick={this.handleClick}/>
   
      <div className={`menuContainer ${this.state.menu?'menuVisible':null}`}>
       <ul className='menu'>
         {
           this.props.courses.map((item,i)=>{
-            return <MenuCourses handleCourse={this.props.handleCourse}{...item} key={item.id} i={i}/>
+            return <MenuCourses handleMenu={this.handleClick}handleCourse={this.props.handleCourse}{...item} key={item.id} i={i}/>
            
           })
         }

@@ -10,6 +10,7 @@ function Related (props){
 
       <h1>{props.course.title}</h1>
       </div>
+      <div className='lista'>
       <CSSTransitionGroup
         transitionName='mount'
         transitionEnterTimeout={500}
@@ -22,6 +23,7 @@ function Related (props){
   
     }
     </CSSTransitionGroup>
+    </div>
     </div>
   )
 }

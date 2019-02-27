@@ -32,8 +32,25 @@
   
 }
 
+@media screen and (max-width:1024px){
+.LessonWrapper{
+  padding: 0px 30px;
+}
+}
 @media screen and (max-width:768px){
 .LessonWrapper{
   padding: 0px 30px;
 }
+}
+@media screen and (max-width:480px){
+.LessonWrapper{
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+
+
 }

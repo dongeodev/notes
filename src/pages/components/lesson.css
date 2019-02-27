@@ -179,3 +179,12 @@
     
   }
 }
+
+@media screen and (max-width:480px){
+.Lesson{
+  width: 90%;
+}
+.LessonTitle{
+  margin: 0;
+}
+}

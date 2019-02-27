@@ -7,7 +7,7 @@ class MenuCourses extends Component{
   }
   handleClick = (event)=>{
     this.props.handleCourse(this.props.id)
-    
+    this.props.handleMenu(event)
   }
   render(){
 

@@ -89,7 +89,7 @@
   .Profile{
     max-width: 120px;
     max-height: 350px;
-    min-height: 300px
+    min-height: 260px
 
   }  
   .Profile-img{
@@ -120,7 +120,7 @@
     top: 55px;
   }
   .Profile h6{
-    margin: 0 0 20px 10px;
+    margin: 0 0 5px 10px;
     font-size:9px ;
   }
 }

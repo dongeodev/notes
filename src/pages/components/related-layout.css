@@ -10,7 +10,7 @@
   }
 @media screen and (max-width:480px){
 .RelatedLayout{
-  max-width: 100%;
+  max-width: 150%;
   display: flex;
   height: auto;
   margin-bottom: 20px;

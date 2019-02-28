@@ -117,7 +117,7 @@ h1{
 }
 @media screen and (max-width:868px){
   .Related{
-    max-width: 200px;
+    max-width: 150px;
     font-size: 12px;
   }
   }

@@ -1,6 +1,7 @@
 .RelatedLayout{
   height: 100vh;
-  max-width: 250px;
+  max-width: 320px;
+  width: 100%;
 }
 
 @media screen and (max-width:480px){

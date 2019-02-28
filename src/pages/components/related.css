@@ -1,7 +1,7 @@
 .Related{
-  max-width: 250px;
+  max-width: 320px;
   height: 100vh;
-  
+  width: 100%;
   background-image: url('../../backgrounds/related.png');
   background-size: cover;
   background-repeat: no-repeat;

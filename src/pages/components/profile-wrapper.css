@@ -1,15 +1,14 @@
 .ProfileWrapper{
-  width: 100vw;
+  width: 100%;
   max-width: 200px;
   height: auto;
-  /* border: solid 2px red; */
   background: white;
   padding: 100px 60px;
 }
 
 @media screen and (max-width:768px){
 .ProfileWrapper{
-  padding: 100px 20px;
+  padding: 100px 20px 30px;
 }
 }
 @media screen and (max-width:480px){

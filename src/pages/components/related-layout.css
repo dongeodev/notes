@@ -3,7 +3,11 @@
   max-width: 320px;
   width: 100%;
 }
-
+@media screen and (max-width:868px){
+  .RelatedLayout{
+    max-width: 200px;
+  }
+  }
 @media screen and (max-width:480px){
 .RelatedLayout{
   max-width: 100%;

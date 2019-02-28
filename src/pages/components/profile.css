@@ -85,24 +85,43 @@
   background: #555; 
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:868px){
   .Profile{
-    max-width: 180px;
-    max-height: 450px;
+    max-width: 120px;
+    max-height: 350px;
+    min-height: 300px
 
   }  
   .Profile-img{
-    width: 180px;
+    width: 118px;
     /* height: 150px; */
   }
-  .certificado-container{
-    width: 180px;
+  .icon-name{
+    margin: 0 5px 0 5px;
+    width: 15px;
+    height: 15px;
   }
-  .container{
+  .icon-info{
+    width: 10px;
+    height: 10px;
+  }
+  .certificado-container{
+    width: 118px;
+    height: 100px;
+    overflow-x: hidden;
+  }
+  .certificado{
+    width: 118px;
+    height: 100px;
     
   }
   .Profile h4{
-    top: 80px;
+    font-size: 11px;
+    top: 55px;
+  }
+  .Profile h6{
+    margin: 0 0 20px 10px;
+    font-size:9px ;
   }
 }
 
@@ -131,17 +150,26 @@
     .certificado-container{
     position: initial;
     margin: 0;
+    width: 150px;
+    height: 110px;
+    margin-top: 20px;
     }
     .certificado{
-     
+      width: 150px;
+      height: 110px;
     }
     .texts{
       margin: 25px 0 0 0px;
       height: 100px;
+      
     }
     .Profile h4{
       top: 133px;
       left: 0;
+      font-size: 17px;
+    }
+    .Profile h6{
+      font-size: 12px;
     }
 
 }

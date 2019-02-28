@@ -18,7 +18,7 @@ render(){
   return(
     <section className='Header'>
      <h1>Courses</h1>
-     <img className="icon-menu hamburger-menu" id="hamburger-menu" src={iconMenu} width={35} height={35} onClick={this.handleClick}/>
+     <img className="icon-menu hamburger-menu" id="hamburger-menu" src={iconMenu} width={30} height={30} onClick={this.handleClick}/>
   
      <div className={`menuContainer ${this.state.menu?'menuVisible':null}`}>
       <ul className='menu'>

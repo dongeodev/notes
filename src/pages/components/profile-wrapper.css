@@ -13,8 +13,10 @@
 }
 @media screen and (max-width:480px){
 .ProfileWrapper{
-  padding: 0;
-  margin: 0;
-  max-width: initial;
+margin-top: 20px;
+height: 200px;
+max-width: 100vw;
+padding: 0;
+
 }
 }
